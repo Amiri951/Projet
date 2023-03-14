@@ -1,0 +1,17 @@
+enable
+conf t 
+hostname R4
+enable secret cisco
+line vty 0
+password class
+
+#Configuration des Interface#
+
+conf t
+interface G0/0/1
+ip add 40.40.40.1 255.255.255.0
+no shut
+interface G0/0/0
+ip add 50.50.50.40 255.255.255.0
+no shut
+

@@ -1,0 +1,18 @@
+enable
+conf t 
+hostname R1
+enable secret cisco
+line vty 0
+password class
+
+#Configuration des Interface#
+
+conf t
+interface G0/0/1
+ip add 10.10.10.1 255.255.255.0
+no shut
+interface G0/0/0
+ip add 50.50.50.10 255.255.255.0
+no shut
+
+

@@ -1,0 +1,7 @@
+router# conf t 
+router# vlan 70
+router# name Acceuil
+router# exit
+router# interface range FastEthernet 0/1-7
+router# switchport mode access
+router# switchport access vlan 70
